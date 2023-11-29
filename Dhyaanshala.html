@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dhyaanshala.css">
+    <title>Online Meditation Classes</title>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop poster="poster.jpg" id="background-video">
+            <source src="bg video.mp4" type="video/mp4">
+        </video>
+        <div class="navbar">
+            <ul>
+                <li><img src="./pics/13082-removebg-preview.png" alt="logo" id="logo"></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="./Meditation.html">Meditation videos</a></li>
+                <li><a href="./Instructors.html">Instructors</a></li>
+                <li><button onclick="showcontact()">Contact</button></li>
+            </ul>
+        </div>
+        <div class="content">
+          <section class="info">
+            <h1>Welcome to DhyaanShala </h1>
+            <p>Find inner peace and harmony through meditation.</p>
+            <a href="#classes" class="btn">Explore Classes</a>
+        </section>
+      </div>
+    </div>
+  <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>Meditation can wipe away the day's stress, bringing with it inner peace. See how you can easily learn to practice meditation whenever you need it most, with our online meditation classes.
+        <br>
+        At DhyaanShala Meditation Classes, we believe that meditation is a powerful tool that can transform lives. Whether you're new to meditation or an experienced practitioner, our classes are designed to accommodate all levels and help you tap into the immense benefits of this ancient practice.
+       <br>
+       <br>
+       <b>Our Instructors</b>
+       <br>
+       Our team of experienced and dedicated meditation instructors brings a wealth of knowledge and expertise to every class. 
+       <br>
+       They are passionate about helping you discover the benefits of meditation, from reducing stress and anxiety to enhancing mental clarity and overall well-being.
+       <br>
+       <br>
+       <b>Join Us</b>
+       <br>
+       Whether you're seeking relaxation, stress relief, or a path to greater self-awareness, DhyaanShala Meditation Classes is here to support you. 
+        <br>
+        <h3><b>Join us today and start your journey towards a more balanced and fulfilling life.</b></h3>
+      </p>
+  </section>
+
+  <section id="classes" class="classes">
+      <h2>Our Classes</h2>
+      <div class="class-card">
+          <img src="./pics/3.jpg" alt="Meditation Class 1">
+          <h4>Free classes</h4>
+      </div>
+      <div class="class-card">
+          <img src="./pics/4.jpg" alt="Meditation Class 2">
+          <h4>Premium (Paid) Batches</h4>
+      </div>
+  </section>
+
+  
+  <div class="photo-gallery">
+    <div>
+        <img src="https://media.istockphoto.com/id/860080282/photo/athletic-people-practicing-yoga-on-a-sports-class-in-nature.jpg?s=612x612&w=0&k=20&c=Fel7DQ_B4dcELQqSSXQ0uxqNLmQoOpIg7naaIiHGyPs=" id="img1" >
+
+        <div class="buttons">
+            <button class="lft-btn" onclick="changeimg2()"><img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" width="30px"></button>
+            <button class="rgt-btn" onclick="changeimg()"><img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" width="30px"></button>
+        </div>
+    </div>
+  </div>
+
+
+    <div class="form-container" id="form-container">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h2>Your Details</h2>
+            <button style="background-color: transparent; border: none; cursor: pointer;" onclick="closecontact()"><img src="https://cdn-icons-png.flaticon.com/512/2734/2734822.png" width="30px" height="30px"></button>
+        </div>
+        <form action="#" method="POST">
+
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone: </label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="message">Message: </label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button class="submit-button" onclick="showalert()">Submit</button>
+        </form>
+    </div>
+
+
+  <script src="Dhyaanshala.js"></script>
+</body>
+</html>
